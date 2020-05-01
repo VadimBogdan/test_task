@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD191C1D245C55230066BFAA /* CatDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD191C1C245C55230066BFAA /* CatDetailedViewController.swift */; };
+		DD4687F72459B96D0045935E /* CatsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4687F62459B96D0045935E /* CatsNetworkManager.swift */; };
+		DD4687F92459BA860045935E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4687F82459BA860045935E /* Cat.swift */; };
+		DD4687FB2459F7000045935E /* CatsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4687FA2459F7000045935E /* CatsCache.swift */; };
 		DD57DF2E245960DF00C99571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57DF2D245960DF00C99571 /* AppDelegate.swift */; };
 		DD57DF30245960DF00C99571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57DF2F245960DF00C99571 /* SceneDelegate.swift */; };
 		DD57DF32245960DF00C99571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57DF31245960DF00C99571 /* ViewController.swift */; };
 		DD57DF35245960DF00C99571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD57DF33245960DF00C99571 /* Main.storyboard */; };
 		DD57DF37245960E100C99571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD57DF36245960E100C99571 /* Assets.xcassets */; };
 		DD57DF3A245960E100C99571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD57DF38245960E100C99571 /* LaunchScreen.storyboard */; };
+		DD57DF4224596AE800C99571 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57DF4124596AE800C99571 /* CatCollectionViewCell.swift */; };
+		DD81A145245AF7B4005B86AD /* CatsURLRequestComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81A144245AF7B4005B86AD /* CatsURLRequestComposer.swift */; };
+		DD81A147245AFC97005B86AD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81A146245AFC97005B86AD /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD191C1C245C55230066BFAA /* CatDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailedViewController.swift; sourceTree = "<group>"; };
+		DD4687F62459B96D0045935E /* CatsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsNetworkManager.swift; sourceTree = "<group>"; };
+		DD4687F82459BA860045935E /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		DD4687FA2459F7000045935E /* CatsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsCache.swift; sourceTree = "<group>"; };
 		DD57DF2A245960DF00C99571 /* test_task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD57DF2D245960DF00C99571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD57DF2F245960DF00C99571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		DD57DF36245960E100C99571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD57DF39245960E100C99571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD57DF3B245960E100C99571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD57DF4124596AE800C99571 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD81A144245AF7B4005B86AD /* CatsURLRequestComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsURLRequestComposer.swift; sourceTree = "<group>"; };
+		DD81A146245AFC97005B86AD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		DD57DF2C245960DF00C99571 /* test_task */ = {
 			isa = PBXGroup;
 			children = (
+				DD57DF31245960DF00C99571 /* ViewController.swift */,
+				DD57DF4124596AE800C99571 /* CatCollectionViewCell.swift */,
+				DD191C1C245C55230066BFAA /* CatDetailedViewController.swift */,
+				DD4687FA2459F7000045935E /* CatsCache.swift */,
+				DD4687F82459BA860045935E /* Cat.swift */,
+				DD57DF33245960DF00C99571 /* Main.storyboard */,
+				DD81A13D245ACE93005B86AD /* Network */,
+				DDDAB1FB2459739600E65160 /* other files */,
+			);
+			path = test_task;
+			sourceTree = "<group>";
+		};
+		DD81A13D245ACE93005B86AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD4687F62459B96D0045935E /* CatsNetworkManager.swift */,
+				DD81A144245AF7B4005B86AD /* CatsURLRequestComposer.swift */,
+				DD81A146245AFC97005B86AD /* Environment.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DDDAB1FB2459739600E65160 /* other files */ = {
+			isa = PBXGroup;
+			children = (
 				DD57DF2D245960DF00C99571 /* AppDelegate.swift */,
 				DD57DF2F245960DF00C99571 /* SceneDelegate.swift */,
-				DD57DF31245960DF00C99571 /* ViewController.swift */,
-				DD57DF33245960DF00C99571 /* Main.storyboard */,
 				DD57DF36245960E100C99571 /* Assets.xcassets */,
 				DD57DF38245960E100C99571 /* LaunchScreen.storyboard */,
 				DD57DF3B245960E100C99571 /* Info.plist */,
 			);
-			path = test_task;
+			path = "other files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD57DF32245960DF00C99571 /* ViewController.swift in Sources */,
+				DD81A147245AFC97005B86AD /* Environment.swift in Sources */,
+				DD4687FB2459F7000045935E /* CatsCache.swift in Sources */,
+				DD81A145245AF7B4005B86AD /* CatsURLRequestComposer.swift in Sources */,
 				DD57DF2E245960DF00C99571 /* AppDelegate.swift in Sources */,
+				DD191C1D245C55230066BFAA /* CatDetailedViewController.swift in Sources */,
+				DD57DF4224596AE800C99571 /* CatCollectionViewCell.swift in Sources */,
+				DD4687F92459BA860045935E /* Cat.swift in Sources */,
 				DD57DF30245960DF00C99571 /* SceneDelegate.swift in Sources */,
+				DD4687F72459B96D0045935E /* CatsNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +330,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCRZABQ3TM;
-				INFOPLIST_FILE = test_task/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/test_task/other files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +349,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCRZABQ3TM;
-				INFOPLIST_FILE = test_task/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/test_task/other files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
